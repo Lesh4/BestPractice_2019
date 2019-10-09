@@ -6,4 +6,4 @@ for SIM in STRING:
     COAST += COAST_SIM
 RUB = COAST//100
 COP = COAST%100
-print(STRING, '   ', RUB, ' р. ', COP, ' коп.')
+print(RUB, ' р. ', COP, ' коп.')
