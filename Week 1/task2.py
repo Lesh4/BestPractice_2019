@@ -13,5 +13,5 @@ try:
         print(format(A*B, '.2f'))
     else:
         print('ЫЫЫЫЫЫ')
-except:
+except ZeroDivisionError:
     print('ЫЫЫЫЫЫ')
