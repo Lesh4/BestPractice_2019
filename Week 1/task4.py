@@ -40,9 +40,10 @@ def diag_check(strings, colums, flag):
 STRINGS = []
 COLUMS = []
 
-for i in range(0, 8):
-    COLUMS.append(int(input()))
-    STRINGS.append(int(input()))
+for k in range(0, 8):
+    COORD = input().split()
+    COLUMS.append(int(COORD[0]))
+    STRINGS.append(int(COORD[1]))
 
 F_PLUS = plus_check(STRINGS, COLUMS)
 F_DIAD_G = diag_check(STRINGS, COLUMS, 1)
