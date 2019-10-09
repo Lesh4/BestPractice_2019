@@ -40,7 +40,7 @@ def diag_check(strings, colums, flag):
 STRINGS = []
 COLUMS = []
 
-for k in range(0, 8):
+for l in range(0, 8):
     COORD = input().split()
     COLUMS.append(int(COORD[0]))
     STRINGS.append(int(COORD[1]))
