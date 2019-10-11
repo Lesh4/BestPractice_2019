@@ -8,7 +8,7 @@ for i in range(N):
     SEQUENCE.append(STRING)
 for STEK in SEQUENCE:
     if len(STEK) % 2 != 0:
-        print('no')
+        f = 0
     else:
         f = 0
         while len(STEK) != 0:
