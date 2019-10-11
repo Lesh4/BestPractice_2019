@@ -1,6 +1,6 @@
 """ Программа, которая проверяет, является ли скобочная последовательность правильной """
 from collections import deque
-DICT_SEQ = { '{':'}', '(':')', '[':']'}
+DICT_SEQ = {'{':'}', '(':')', '[':']'}
 SEQUENCE = []
 N = int(input())
 for i in range(N):
@@ -14,7 +14,8 @@ for STEK in SEQUENCE:
         print(STEK)
         while len(STEK) != 0:
             for KEY in DICT_SEQ:
-                if len(STEK) == 0: break
+                if len(STEK) == 0:
+                    break
                 if STEK[0] == KEY:
                     if STEK[len(STEK)-1] == DICT_SEQ[KEY]:
                         STEK.pop()
@@ -22,6 +23,7 @@ for STEK in SEQUENCE:
                         f = 1
                     else:
                         f = 0
-                        break 
-            if f == 0: break
+                        break
+            if f == 0:
+                break
     print(f)
