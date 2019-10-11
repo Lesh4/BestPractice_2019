@@ -11,7 +11,6 @@ for STEK in SEQUENCE:
         print('no')
     else:
         f = 0
-        print(STEK)
         while len(STEK) != 0:
             for KEY in DICT_SEQ:
                 if len(STEK) == 0:
@@ -26,4 +25,7 @@ for STEK in SEQUENCE:
                         break
             if f == 0:
                 break
-    print(f)
+    if f:
+        print("yes")
+    else:
+        print("no")
