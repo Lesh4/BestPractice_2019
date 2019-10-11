@@ -6,4 +6,4 @@ for i in range(1, NUM+1):
         k += 1
         print(i, end=' ')
 if k == 2:
-    print("ACHTUNG")
+    print("\nACHTUNG")
