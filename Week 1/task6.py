@@ -31,4 +31,4 @@ while ZNACH != 1:
     NOZ = int(NOZ / ZNACH)
     ZNACH = gcd(SUM, NOZ)
 
-print(SUM, "/", NOZ)
+print(SUM, "/", NOZ, sep = '')
