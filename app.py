@@ -2,7 +2,7 @@
 import signal
 from flask import Flask, send_from_directory
 from flask_restful import Resource, Api
-from make_dir import make_dir
+from packages.make_dir import make_dir
 
 APP = Flask(__name__)
 
