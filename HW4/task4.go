@@ -92,15 +92,12 @@ func main() {
 		colums[i] = coord[0]
 		str[i] = coord[1]
 	}
-	fmt.Println(colums)
-	fmt.Println(str)
-
 	f_plus := plus_check(str[:], colums[:])
 	f_diag_g := diag_check(str[:], colums[:], 1)
 	f_diag_p := diag_check(str[:], colums[:], 2)
 	if f_plus || f_diag_g || f_diag_p == true {
-		fmt.Println("YES")
+		fmt.Print("YES")
 	} else {
-		fmt.Println("NO")
+		fmt.Print("NO")
 	}
 }
